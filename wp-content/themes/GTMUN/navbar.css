@@ -1,0 +1,122 @@
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+
+.navbar {
+    color:white;
+
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(35, 35, 47);
+
+    /* RGBa with 0.6 opacity */
+    background: rgba(35, 35, 47, 0.8);
+
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99333333, endColorstr=#99333333);
+
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99333333, endColorstr=#99333333)";
+
+
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+/*--- Disappearing Logo ---*/
+
+@media (max-width: 990px) {
+  .navbar-brand {
+    /*display: none;*/
+  }
+}
+
+
+/*--- Dropdown ---*/
+
+#menu-main-menu a{
+    color:white;
+}
+
+.navbar-default a{
+    
+}
+
+.dropdown-menu{
+    background: rgb(35, 35, 47);
+}
+
+.navbar-nav > li > a {
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: rgb(55,61,72);
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: rgb(55,61,72);
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #999999;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: #555555;
+background-color: #323859;
+background-color: rgb(47,47,57);
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 16px 20px;
+}

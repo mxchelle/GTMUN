@@ -1,0 +1,292 @@
+
+
+
+/*--- Homepage Specific ---*/
+
+.division{
+  width:100%;
+  height:100%;
+  display:table;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+}
+
+.splash{
+  width:100%;
+  height:100%;
+  position:static;
+  top:0%;
+  display:table;
+  z-index:-1;
+}
+
+
+#preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #FF6600 url('img/loading.gif') no-repeat center center;
+  background-size: 200px 200px;
+}
+
+
+.intro{
+   -webkit-text-fill-color: transparent;
+   background: -o-linear-gradient(transparent, transparent);
+
+}
+
+.title{
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  text-align:center;
+  color:white;
+}
+
+.text1{
+  color: #cb6647;
+  background: -webkit-linear-gradient(transparent, transparent),
+               url(hero/1.jpg) repeat;
+  -webkit-background-clip: text;
+}
+
+.text2{
+  color:gray;
+  background: -webkit-linear-gradient(transparent, transparent),
+               url(hero/2.jpg) repeat;
+  -webkit-background-clip: text;
+}
+
+.text3{
+  color: #a8886f;
+  background: -webkit-linear-gradient(transparent, transparent),
+               url(hero/3.jpg) repeat;
+  -webkit-background-clip: text;
+}
+
+#placeholder{
+  opacity:0;
+  filter:alpha(opacity=0);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0%;
+  display:table;
+  z-index:-2;
+}
+
+.anchor{
+  position:relative;
+  height:0px;
+  float:left;
+}
+
+p { margin: 0; padding: 0; }
+
+.section{
+  width:auto;
+  z-index:10;
+  font-size: 1.2em;
+  line-height: 2em;
+  color:white;
+  min-height:100%;
+  height:auto;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+  -webkit-background-size: 100% !important;
+  -moz-background-size: 100% !important;
+  -o-background-size: 100% !important;
+  background-size: 100% !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.section h1{
+  line-height:1.5em;
+}
+
+#about{
+  background: url(hero/about.jpg) #54749a no-repeat 100% 0% fixed;
+  padding-bottom:100px;
+}
+
+#aboutDiv{
+  padding-top:2%;
+  text-align:justify;
+}
+/* set up a bkg when js is disabled, you may want to make other assumptions here */
+.no-js #about{ 
+  background: url(hero/about.jpg) #54749a no-repeat center top fixed; }
+
+#about .row{
+  width:85%;
+  margin:auto;
+}
+
+#about a {
+  color: #ffd2bc;
+  text-decoration: underline;
+}
+#about a:hover,
+#about a:focus {
+  color: #ffeee6;
+  text-decoration: underline;
+}
+
+
+#contact{
+  height:auto;
+  background: url(hero/contact.jpg) no-repeat 50% 100% fixed; 
+  padding-bottom:10px;
+  color:white;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+#contact #form{
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -ms-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#works{
+  background-color:#24170e;
+  height:auto;
+  min-height:100%;
+  color:white;
+}
+
+
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    padding:0px;
+    margin:0px;
+    height:300px;
+    min-width:250px; 
+
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.2s linear;
+
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.img-container{
+  width: 100%;
+  height:auto;
+  margin: 0;
+  -webkit-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
+/* --- Label configuration -------------------------------------------------------------- */
+
+.viewport:hover .img-container{
+  opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+.viewport:hover .dark-background{
+  opacity: 1;
+}
+
+.viewport:hover .dark-background div span{
+  margin-top: 0%;
+}
+
+.img-container {
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 1180px) and (min-width: 992px){
+    .img-container  {
+        height: 120%;
+        width: auto;
+    }
+}
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+  position: absolute;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.dark-background div{
+  display:table-cell;
+  vertical-align:middle;
+}
+.dark-background div span{
+  font-weight: 700;
+  margin-top: -11%;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 2em;
+  font-family:'Open Sans';
+  text-transform:uppercase;
+}
+
+.dark-background em {
+  padding-top:5px;
+  color: #ffffff;
+  font-weight:300;
+  text-transform:none;
+  font-family:'Merriweather';
+  display: block;
+  font-size: 1em;
+  font-style:normal;
+  font-size:16px;
+  text-transform: none;
+}

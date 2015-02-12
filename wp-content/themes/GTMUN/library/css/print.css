@@ -1,0 +1,38 @@
+body{
+	font-size:.9em;
+}
+
+#content {
+	padding: 10px 0 0;
+}
+.mylead{
+	font-size:14px;
+	line-height:16px;
+}
+
+#sidebar1{
+	display:none;
+}
+
+.secondary-hero-unit{
+	background:none !important;
+	height:100px !important;
+}
+
+.secondary-hero-unit h1{
+	color:black;
+	font-size:30px;
+}
+
+.navbar-header{
+	display:none;
+}
+
+#main{
+	width:85%;
+	margin:auto;
+}
+
+footer, #inner-footer{
+	display:none;
+}

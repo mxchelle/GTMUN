@@ -1,0 +1,150 @@
+
+/*---- Homepage Specific ---*/
+
+.divider{
+	width: auto;
+	background: url('images/coverPhoto.jpg');
+	min-height: 20%;
+	padding-left:20%;
+	padding-right:20%;
+	margin:0px;
+	background-attachment: fixed;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.more-news {
+    margin-bottom: 60px;
+    text-align: right;
+    width: 100%;
+}
+
+.hero-text{
+	padding: 100px 0px;
+	/*display:table-cell;*/
+	vertical-align:middle;
+	margin:auto;
+	width:100%;
+	line-height: 2em;
+	float:none;
+	color:white;
+	text-align:center;
+}
+
+.entry-author-link,
+.entry-permalink,
+.entry-meta {
+	display: none;
+}
+
+.meta{
+	display: none;
+}
+
+.blurb{
+	padding: 50px 50px 0px 50px;
+}
+
+.quote{
+	line-height: 48px;
+	margin: 0px;
+}
+
+.author{
+	float: right;
+	font-family: Century Gothic, sans-serif;
+}
+
+/* ---- Homepage Widget ---*/
+
+/* sidebar */
+
+.suggestion-area{
+	width:100%;
+}
+
+.suggestion-area textarea{
+	width:100%;
+}
+
+/* quote in homepage bar */
+.quote-text{
+	font-family:Georgia;
+	font-size:18px;
+}
+
+.counter{
+	text-align:center;
+}
+
+.quote-text > .author{
+	font-size:14px;
+	margin-top:10px;
+}
+
+#num-remaining{
+	font-size: 82pt;
+	font-family: Georgia;
+	display: inline-block;
+	line-height: 30px;
+	margin-right: 10px;
+	margin-bottom: 35px;
+}
+
+#days-before{
+	display:inline-block;
+	vertical-align: middle !important;
+}
+
+#days-before h2{
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 4px;
+}
+
+#days-before h3{
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Century Gothic;
+	color: #666666;
+	padding: 0px;
+	margin: 0px;
+}
+
+#homepage-widget-area{
+	color:white;
+	background-color: #202020;
+	width: 100%;
+	min-height: 200px;
+
+	background-color: rgb(20,20,20); /* Needed for IEs */
+
+	-moz-box-shadow: inset 5px 5px 5px rgba(12,12,12,0.6);
+	-webkit-box-shadow:inset 5px 5px 5px rgba(12,12,12,0.6);
+	box-shadow: inset 5px 5px 5px rgba(12,12,12,0.6);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+
+}
+
+.homepage-bar {
+    display: table-cell !important;
+	vertical-align: middle !important;
+	float: none !important;
+}
+
+.homepage-bar-container{
+	height: 200px;
+	display: table !important;
+}
+
